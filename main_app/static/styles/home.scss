@@ -1,0 +1,160 @@
+// sass --watch sass:styles 
+// folklore: rgb(183, 68, 47)
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+// Sweeping stylistic settings
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+main {
+    width: 100vw;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    
+    i {
+        transition: .15s;
+    }
+
+    i:hover {
+        font-size: 55px;
+        transform: scale(1.3);
+    }
+}
+
+
+// Top of page
+#am-logo {
+    object-fit: cover;
+    width: 100vw;
+    height: 150px;
+}
+
+.hero {
+    display: grid;
+    justify-items: center;
+    width: 100vw;
+    position: absolute;
+    height: 150px;
+    background-color: rgb(214, 174, 109);
+
+    .socials {
+        position: absolute;
+        width: 100%;
+        max-width: 950px;
+        margin-top: 92px;
+        display: grid;
+        grid-template-columns: 25vw 25vw;
+        place-items: center;
+        justify-content: space-between;
+        padding: 5px 8px 10px 8px;
+
+        .media, .business {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-around;
+            width: 100%;
+            a {
+                width: 44px;
+                height: 32px;
+                margin: 0 auto;
+
+                i {
+                    font-size: 32px;
+                    padding: 0px 10px;
+                    width: inherit;
+                    height: inherit;
+                }
+            }
+        }
+    }
+}
+
+// Main "profile" image
+.hero-img {
+    height: 650px;
+    padding-top: 150px;
+    display: grid;
+    place-items: center;
+    
+    img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 50%;
+        z-index: -1;
+    }
+}
+
+// Text section
+.about {
+    width: 100%;
+    margin: 0 auto;
+
+    p {
+        font-size: 18px;
+        line-height: 1.3em;
+        text-align: center;
+        margin: 0 35px;
+    }
+}
+
+// Embeded YouTube videos
+.videos {
+    display: grid;
+    grid-template-columns: 462px 462px;
+    grid-template-rows:  260px 260px;
+    place-items: center;
+    gap: 25px;
+    width: 100%;
+    margin-top: 40px;
+
+    iframe {
+        width: 90vw;
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+// Bottom of page
+.footer {
+    width: 100vw;
+    padding: 10px 5vw 10px 5vw;
+    margin-top: 30px;
+    background-color: rgb(214, 174, 109);
+}
+
+
+// Break point to align videos vertically instead of horizontally
+@media only screen and (max-width: 1000px) {
+    .videos {
+        grid-template-columns: none;
+        grid-template-rows:  45vw 45vw 45vw 45vw;
+    }
+  }
+
+// Single resize for main photo on mobile
+@media only screen and (max-width: 500px) {
+    .hero-img {
+        height: 550px;
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+  }

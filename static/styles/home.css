@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; }
+
+main {
+  width: 100vw;
+  max-width: 950px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none;
+  color: whitesmoke; }
+  a i {
+    transition: .15s; }
+  a i:hover {
+    font-size: 55px;
+    transform: scale(1.3); }
+
+#am-logo {
+  object-fit: cover;
+  width: 100vw;
+  height: 150px; }
+
+.hero {
+  display: grid;
+  justify-items: center;
+  width: 100vw;
+  position: absolute;
+  height: 150px;
+  background-color: #d6ae6d; }
+  .hero .socials {
+    position: absolute;
+    width: 100%;
+    max-width: 950px;
+    margin-top: 92px;
+    display: grid;
+    grid-template-columns: 25vw 25vw;
+    place-items: center;
+    justify-content: space-between;
+    padding: 5px 8px 10px 8px; }
+    .hero .socials .media, .hero .socials .business {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-around;
+      width: 100%; }
+      .hero .socials .media a, .hero .socials .business a {
+        width: 44px;
+        height: 32px;
+        margin: 0 auto; }
+        .hero .socials .media a i, .hero .socials .business a i {
+          font-size: 32px;
+          padding: 0px 10px;
+          width: inherit;
+          height: inherit; }
+
+.hero-img {
+  height: 650px;
+  padding-top: 150px;
+  display: grid;
+  place-items: center; }
+  .hero-img img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: -1; }
+
+.about {
+  width: 100%;
+  margin: 0 auto; }
+  .about p {
+    font-size: 18px;
+    line-height: 1.3em;
+    text-align: center;
+    margin: 0 35px; }
+
+.videos {
+  display: grid;
+  grid-template-columns: 462px 462px;
+  grid-template-rows: 260px 260px;
+  place-items: center;
+  gap: 25px;
+  width: 100%;
+  margin-top: 40px; }
+  .videos iframe {
+    width: 90vw;
+    max-width: 100%;
+    height: 100%; }
+
+.footer {
+  width: 100vw;
+  padding: 10px 5vw 10px 5vw;
+  margin-top: 30px;
+  background-color: #d6ae6d; }
+
+@media only screen and (max-width: 1000px) {
+  .videos {
+    grid-template-columns: none;
+    grid-template-rows: 45vw 45vw 45vw 45vw; } }
+
+@media only screen and (max-width: 500px) {
+  .hero-img {
+    height: 550px; }
+    .hero-img img {
+      width: 300px;
+      height: 300px; } }
+
+/*# sourceMappingURL=home.css.map */
