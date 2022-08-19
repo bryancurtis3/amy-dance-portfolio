@@ -1,0 +1,62 @@
+{% load static %}
+{% load sass_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/20a38f030c.js" crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% sass_src 'styles/home.scss' %}">
+
+    <!-- Scripts -->
+    <script src="./scripts/app.js"></script>
+
+    <title>Amy McInturff Gallery</title>
+    
+</head>
+
+<body>
+
+    <!-- Top of page -->
+    <section class="hero">
+        <img src="https://i.imgur.com/myFdyLn.png" alt="Amy McInturff" id="am-logo">
+        <section class="socials">
+            <section class="media">
+                <a target="_blank" href="https://www.instagram.com/amy.mcinturff/" title="Amy's Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/people/Amy-McInturff/100008851939307/" title="Amy's Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </section>
+            <section class="business">
+                <a href="mailto: amcin103@gmail.com" title="Send Amy an email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/amy-mcinturff-a05b26198/" title="Amy's LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </section>
+        </section>
+    </section>
+
+    <!-- Body of page -->
+    <main>
+
+        
+    </main>
+
+    {% comment %} <!-- Bottom of page -->
+    <section class="footer">
+        <p style="text-align: center;">©2022 by Amy Elise McInturff</p>
+        <!-- <i class="fa-solid fa-envelope"></i> -->
+    </section> {% endcomment %}
+    
+</body>
+</html>
