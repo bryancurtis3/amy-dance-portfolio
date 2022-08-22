@@ -1,0 +1,21 @@
+.photos {
+  display: grid;
+  margin-top: 25px; }
+
+@media only screen and (max-width: 950px) {
+  .photos {
+    grid-template-columns: 1fr; }
+    .photos img {
+      margin: 4vh auto;
+      height: 95vh; } }
+
+@media only screen and (min-width: 950px) {
+  .photos {
+    grid-template-columns: 1fr 1fr; }
+    .photos img {
+      margin: 3vh auto;
+      width: 40vw;
+      max-width: 546px;
+      min-width: 370px; } }
+
+/*# sourceMappingURL=gallery.css.map */
